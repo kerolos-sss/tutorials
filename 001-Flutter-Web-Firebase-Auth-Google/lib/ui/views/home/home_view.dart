@@ -25,6 +25,15 @@ class HomeView extends StatelessWidget {
               onPressed: () {
                 context.read<FirebaseAuthService>().signOut();
               },
+              child: const Text(Strings.createRoom),
+            ),
+
+            const Spacer(),
+            
+            RaisedButton(
+              onPressed: () {
+                context.read<FirebaseAuthService>().signOut();
+              },
               child: const Text(Strings.signOut),
             ),
             const Spacer(),
