@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../app/constants/strings.dart';
-import '../sign_in_view_model.dart';
+class MyButton extends StatelessWidget {
+  final void Function() onPressed;
 
-class AnonymousSignInButton extends StatelessWidget {
-  const AnonymousSignInButton({
+  final String text;
+
+  const MyButton({
+    @required final this.text,
+    final this.onPressed,
     Key key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      onPressed: () {
-        context.read<SignInViewModel>().signInAnonymously();
-      },
+      onPressed: () {},
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       color: Colors.red[900],
-      child: const Text(
-        Strings.anonymousSignUp,
+      child: Text(
+        text,
         textAlign: TextAlign.center,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 14,
           color: Colors.white,
         ),

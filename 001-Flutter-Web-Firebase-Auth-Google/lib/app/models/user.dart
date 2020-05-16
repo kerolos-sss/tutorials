@@ -13,4 +13,21 @@ class User {
   final String email;
   final String photoUrl;
   final String displayName;
+
+  @override
+  String toString() {
+
+    var str = 'uid: ${uid}';
+//
+//        + this.uid,
+//    this.email,
+//    this.photoUrl,
+//    this.displayName,
+
+    return super.toString() + '  {'
+        ' ' + str + ''
+        '}';
+
+    }
+  
 }

@@ -1,3 +1,5 @@
+// import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -15,6 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Consumer<User>(
         builder: (_, user, __) {
+          print(user);
           if (user == null) {
             return const SignInView();
           } else {

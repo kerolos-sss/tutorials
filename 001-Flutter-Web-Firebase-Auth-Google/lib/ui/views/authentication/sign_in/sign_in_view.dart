@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../app/constants/strings.dart';
 import 'sign_in_view_model.dart';
-import 'widgets/anonymous_sign_in_button.dart';
+// import 'widgets/anonymous_sign_in_button.dart';
 import 'widgets/google_sign_in_button.dart';
 
 class SignInView extends StatelessWidget {
@@ -59,7 +59,7 @@ class SignInViewBody extends StatelessWidget {
     return Column(
       children: <Widget>[
         const Spacer(),
-        const AnonymousSignInButton(),
+        // const AnonymousSignInButton(),
         const GoogleSignInButton(),
         const Spacer(),
       ],
